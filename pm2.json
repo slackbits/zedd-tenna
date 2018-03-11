@@ -1,0 +1,36 @@
+{
+    "apps": [{
+        "name": "scanner",
+        "script": "scanner.js",
+        "cwd": "/app/apps/",
+        "log_date_format": "YYYY-MM-DD HH:mm Z",
+        "merge_logs": true,
+        "out_file": "/data/logs/scanner_out.log",
+        "err_file": "/data/logs/scanner_err.log",
+        "exec_mode": "fork",
+        "instances": 1,
+        "watch": false,
+        "ignore_watch": ["[\\/\\\\]\\./", "node_modules"],
+        "max_memory_restart": "128M",
+        "env": {
+            "DBUS_SYSTEM_BUS_ADDRESS": "unix:path=/host_run/dbus/system_bus_socket",
+        }
+    }, {
+        "name": "server",
+        "script": "server.js",
+        "cwd": "/app/apps/",
+        "log_date_format": "YYYY-MM-DD HH:mm Z",
+        "merge_logs": true,
+        "out_file": "/data/logs/server_out.log",
+        "err_file": "/data/logs/server_err.log",
+        "exec_mode": "fork",
+        "instances": 1,
+        "watch": false,
+        "ignore_watch": ["[\\/\\\\]\\./", "node_modules"],
+        "max_memory_restart": "128M",
+        "env": {
+            "DBUS_SYSTEM_BUS_ADDRESS": "unix:path=/host_run/dbus/system_bus_socket",
+            "DISPLAY": ":0"
+        }
+    }]
+}

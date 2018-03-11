@@ -1,0 +1,19 @@
+{
+  "name": "zedd-tenna",
+  "version": "1.0.0",
+  "description": "Resinos App that Scans for BLE Beacons and Sends Telementry to a Central Server",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/slackbits/zedd-tenna.git"
+  },
+  "author": "Bryan Pizzillo",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/slackbits/zedd-tenna/issues"
+  },
+  "homepage": "https://github.com/slackbits/zedd-tenna#readme"
+}
