@@ -3,5 +3,5 @@
 'use strict';
 
 setInterval(() => {
-    //console.log('Yes');
+    //console.log('Scanner - Scanning');
   }, 2000);

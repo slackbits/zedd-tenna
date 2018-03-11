@@ -1,0 +1,10 @@
+local_resinos:
+  app-name: local-app
+  build-triggers:
+    - Dockerfile: 6a8b2361c2c8dbe108440a9e4ce273cbc34e224493b54d0f06e34414a43a36a5
+    - package.json: 08540667586f67abb0f03e84c0d835791dba313737f6b1eaa3d749b7fd7e1cec
+  environment: []
+destination: /usr/src/app
+ignore:
+  - .git
+  - node_modules/
