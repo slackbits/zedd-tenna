@@ -2,7 +2,7 @@
     "apps": [{
         "name": "scanner",
         "script": "scanner.js",
-        "cwd": "/app/apps/",
+        "cwd": "/app/apps/scanner",
         "log_date_format": "YYYY-MM-DD HH:mm Z",
         "merge_logs": true,
         "out_file": "/data/logs/scanner_out.log",
